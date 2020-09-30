@@ -1,0 +1,154 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.4;
+}
+
+a {
+  color: #333;
+  text-decoration: none;
+}
+
+.container {
+  padding: 0 1rem;
+}
+
+.btn {
+  display: inline-block;
+  border: none;
+  background: #555;
+  color: #fff;
+  padding: 7px 20px;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background: #666;
+}
+
+.checkbox, .title{
+  display:inline-block;
+}
+
+.about{
+  background:#f3f3f3;
+  text-align: center;
+  height:90vh;
+}
+
+.about .heading{
+  padding:50px 0px 20px;
+}
+
+.about .input, .add-task-from .input{
+  padding:10px;
+  margin:5px;
+  outline:none;
+  border-radius: 8px;
+}
+
+.about .submit, .add-task-from .submit{
+  padding:10px 85px;
+  margin:15px;
+  outline:none;
+  border-radius: 8px;
+  cursor:pointer;
+  background:#333;
+  color:#fff;
+  transition: ease-out 0.5s;
+}
+.log-wrapper{
+  height:100%;
+  background:#f3f3f3;
+}
+.about .submit:hover,.add-task-from .submit:hover{
+  background:#fff;
+  color:#333;
+}
+
+.add-task-from{
+  background:#f3f3f3;
+  text-align: center;
+  padding: 50px 0 20px;
+}
+
+.add-task-from h2{
+  margin-bottom:20px;
+}
+
+.table{
+  border:1px solid #ccc;
+  width:100%;
+}
+
+.table tr td{
+  text-align: center;
+}
+
+
+
+.time-taken-page{
+  background:#f3f3f3;
+  height:100vh;
+}
+
+.time-taken-page .options{
+  display: flex;
+}
+
+.time-taken-page .options button{
+  flex: 1;
+  border: 1px solid #333;
+  padding: 25px;
+  font-size: 16px;
+  background: #F8F8F8;
+  outline: none;
+  border-radius: 2px;
+}
+
+.time-taken-page .options button:hover{
+  background-color: #4f4f4f;
+  box-shadow: 0px 15px 20px rgba(0, 0, 1, 0.4);
+  color: #fff;
+}
+
+.time-container{
+  background:#f3f3f3;
+  width:50%;
+  margin:0 auto;
+  padding: 100px 0;
+  text-align:center;
+}
+
+
+.time{
+  margin: auto;
+  width: 50%;
+  text-align: center;
+  padding:50px 30px;
+  font-size:18px;
+}
+.loading{
+  text-align: center;
+  padding:50px;
+}
+
+.time .button{
+  padding: 10px 34px;
+  margin: 23px 5px;
+  outline:none;
+  border-radius: 8px;
+  cursor:pointer;
+  background:#333;
+  color:#fff;
+  transition: ease-out 0.5s;
+}
+.time .button:hover{
+  background:#fff;
+  color:#333;
+}
