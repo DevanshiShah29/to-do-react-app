@@ -8,7 +8,9 @@ import About from './Components/pages/About';
 import Log from './Components/pages/Log'
 import Mount from './Components/Lifecycle/Mount'
 import TimeTaken from './Components/LifeCycleMethods/TimeTaken'
-import TotalTime from './Components/pages/TotalTime'
+import TotalTime from './Components/pages/TotalTime';
+import UpdateWithRedux from './Components/Reducer Practice/UpdateWithRedux';
+
 //import axios from 'axios';
 import './App.css';
 
@@ -80,6 +82,7 @@ class App extends Component {
             <Route path="/totalTime" component={TotalTime}/>
             <Route path="/Mount" component={Mount} />
             <Route path="/Time" component={TimeTaken} />
+            <Route path="/redux" component={UpdateWithRedux} />
           </div>
         </div>
       </Router>

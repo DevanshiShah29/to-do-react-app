@@ -6,7 +6,8 @@ function Header() {
     <header style={headerStyle}>
       <h1>TodoList</h1>
       <Link style={linkStyle} to="/">Home</Link> | <Link style={linkStyle} to="/about">About</Link> | <Link style={linkStyle} to="/log"> Log </Link>
-      | <Link style={linkStyle} to="/totalTime"> Minutes</Link> | <Link style={linkStyle} to="/mount">Mounting</Link> | <Link style={linkStyle} to="/time"> Time</Link>
+      | <Link style={linkStyle} to="/totalTime"> Minutes</Link> | <Link style={linkStyle} to="/mount">Mounting</Link> | <Link style={linkStyle} to="/time"> Time </Link>
+      | <Link style={linkStyle} to="/redux"> Redux</Link>
     </header>
   )
 }
