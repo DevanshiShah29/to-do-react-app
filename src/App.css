@@ -192,3 +192,13 @@ a {
 .redux .heading{
   padding:15px;
 }
+
+.crud-section .btn{
+  border:1px solid #1c1c1c;
+  background:unset;
+  color:unset;
+}
+
+.crud-section .table tr td{
+  text-align:left;
+}
