@@ -38,21 +38,27 @@
     },
     {
       "id": 8,
-      "title": "dolorem psam",
+      "title": "Redux",
       "time": 16,
       "description": "dignissimos aperiam dolorem qui eum\nfacilis quibusdam animi sint suscipit qui sint possimus cum\nquaerat magni maiores excepturi\nipsam ut commodi dolor voluptatum modi aut vitae"
     },
     {
-      "id": 9,
-      "title": "State and props",
-      "time": 5,
-      "description": "consectetur animi nesciunt iure dolore\nenim quia ad\nveniam autem ut quam aut nobis\net est aut quod aut provident voluptas autem voluptas"
+      "title": "node",
+      "time": "5",
+      "description": "quia et suscipitsuscipit recusandae consequuntur expedita et cumreprehenderit molestiae ut ut quas totamnostrum rerum est autem sunt rem eveniet architecto",
+      "id": 9
     },
     {
-      "id": 10,
-      "title": "Life cycle methods",
+      "title": "UI-UX",
       "time": "10",
-      "description": "quo et expedita modi cum officia vel magni\ndoloribus qui repudiandae\nvero nisi sit\nquos veniam quod sed accusamus veritatis error"
+      "description": "consectetur animi nesciunt iure doloreenim quia adveniam autem ut quam aut nobiset est aut quod aut provident voluptas autem voluptas",
+      "id": 10
+    },
+    {
+      "title": "Life cycle methods",
+      "time": "8",
+      "description": "watched video tutorials",
+      "id": 11
     }
   ]
 }

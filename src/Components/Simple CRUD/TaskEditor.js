@@ -1,8 +1,7 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import axios from 'axios';
-import { useHistory } from "react-router-dom";
 
-function AddTask() {
+function TaskEditor(props) {
 
     const [task, setTask] = useState({
         title: "",
@@ -16,18 +15,25 @@ function AddTask() {
 
     const { title, time, description } = task;
 
-    let history = useHistory();
     const onSubmit = async e => {
         e.preventDefault();
-        await axios.post("http://localhost:3003/tasks", task);
-        history.push("/crud");
+        await axios.put(`http://localhost:3003/tasks/${props.id}`, task);
     };
+
+    const loadUser = async () => {
+        const result = await axios.get(`http://localhost:3003/tasks/${props.id}`);
+        setTask(result.data);
+    };
+
+    useEffect(() => {
+        loadUser();
+    }, []);
 
     return (
         <div>
             <div className="container">
                 <div className="w-75 mx-auto shadow p-5">
-                    <h2 className="text-center mb-4">Add Task</h2>
+                    <h2 className="text-center mb-4">Edit Task</h2>
                     <form onSubmit={e => onSubmit(e)}>
                         <div className="form-group">
                             <input
@@ -60,7 +66,8 @@ function AddTask() {
                             />
                         </div>
 
-                        <button className="btn btn-primary btn-block">Add Task</button>
+
+                        <button className="btn btn-warning btn-block">Update Task</button>
                     </form>
                 </div>
             </div>
@@ -68,4 +75,4 @@ function AddTask() {
     )
 }
 
-export default AddTask;
+export default TaskEditor;

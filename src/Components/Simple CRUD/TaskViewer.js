@@ -1,33 +1,27 @@
-import React, { useState, useEffect } from "react";
-import { Link, useParams } from "react-router-dom";
+import React, { useState, useEffect } from 'react'
 import axios from "axios";
 
-export default function ViewTask() {
-
+function TaskViewer(props) {
     const [task, setTask] = useState({
         title: "",
         time: "",
         description: ""
     });
 
-    const { id } = useParams();
-
     const loadTasks = async () => {
-        const result = await axios.get(`http://localhost:3003/tasks/${id}`);
+        const result = await axios.get(`http://localhost:3003/tasks/${props.id}`);
         setTask(result.data);
+        console.log(props.id)
     }
 
     useEffect(() => {
         loadTasks();
     }, [])
-    
+
     return (
         <div>
             <div className="container py-4">
-                <Link className="btn btn-primary" to="/crud">
-                    back
-                </Link>
-                <h1 className="display-4">Task Id: {id}</h1>
+                <h3>Detailed Summary</h3>
                 <hr />
                 <ul className="list-group w-50">
                     <li className="list-group-item">Task: {task.title}</li>
@@ -38,3 +32,5 @@ export default function ViewTask() {
         </div>
     )
 }
+
+export default TaskViewer;

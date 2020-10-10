@@ -202,3 +202,31 @@ a {
 .crud-section .table tr td{
   text-align:left;
 }
+
+.crud-section .button{
+  float:right;
+}
+
+.crud-section .header{
+  padding:10px 20px;
+}
+
+.crud-section .header h2, .crud-section .header .button{
+  width:auto;
+  display:inline-block;
+}
+
+.crud-section .table .thead-dark th{
+  width:25%;
+}
+
+.ReactModal__Overlay--after-open{
+  background: rgba(0, 0, 1, 0.8)!important;
+}
+
+.ReactModal__Content--after-open{
+  top:200px !important;
+  left:150px !important;
+  right:150px !important;
+  bottom:150px !important;
+}
