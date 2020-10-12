@@ -193,13 +193,13 @@ a {
   padding:15px;
 }
 
-.crud-section .btn{
+.crud-section .btn, .redux-crud .btn{
   border:1px solid #1c1c1c;
-  background:unset;
-  color:unset;
+  color:white;
+  background: #333333 !important;
 }
 
-.crud-section .table tr td{
+.crud-section .table tr td, .redux-crud .table tr td{
   text-align:left;
 }
 
@@ -216,7 +216,7 @@ a {
   display:inline-block;
 }
 
-.crud-section .table .thead-dark th{
+.crud-section .table .thead-dark th, .redux-crud .table .thead-dark th{
   width:25%;
 }
 
@@ -229,4 +229,10 @@ a {
   left:150px !important;
   right:150px !important;
   bottom:150px !important;
+}
+
+.redux-crud form{
+  width:40%;
+  margin:0 auto;
+  padding:30px;
 }

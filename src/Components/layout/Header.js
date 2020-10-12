@@ -29,6 +29,7 @@ function Header() {
       | <NavLink style={linkStyle} to="/time"> Time </NavLink>
       | <NavLink style={linkStyle} to="/redux"> Redux </NavLink> 
       | <NavLink style={linkStyle} to="/crud"> CRUD</NavLink>
+      | <NavLink style={linkStyle} to="/todo"> Redux CRUD</NavLink>
     </header>
   )
 }

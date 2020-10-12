@@ -11,6 +11,7 @@ import Mount from './Components/Lifecycle/Mount'
 import TimeTaken from './Components/LifeCycleMethods/TimeTaken'
 import UpdateWithRedux from './Components/Reducer Practice/UpdateWithRedux';
 import CRUD from './Components/Simple CRUD/List';
+import ReduxCRUD from './Components/Redux CRUD/todoList';
 
 //import axios from 'axios';
 import './App.css';
@@ -89,6 +90,7 @@ class App extends Component {
             <Route path="/tasks/add" component={AddTask} />
             <Route path="/tasks/edit/:id" component={EditTask} />
             <Route path="/tasks/view/:id" component={ViewTask} />
+            <Route path="/todo" component={ReduxCRUD} />
           </div>
       </Router>
     );
