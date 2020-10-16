@@ -88,6 +88,13 @@ a {
 
 .table tr td{
   text-align: center;
+  background:#fff;
+}
+
+.table thead tr th{
+  text-align: center;
+  background:#1c1c1c;
+  color:#ffffff;
 }
 
 
@@ -236,3 +243,56 @@ a {
   margin:0 auto;
   padding:30px;
 }
+
+.Table__pageButton:disabled,.disabled_arrow {
+    cursor: not-allowed;
+    color: gray;
+    font-size: 12px;
+}
+
+.Table__pageButton--active {
+  background: green;
+  color: white;
+}
+
+.Table__pageButton {
+  font-size: 12px;
+  outline: none;
+  border: none;
+  padding: 6px 9px;
+  cursor: pointer;
+  
+}
+  
+.previous-arrow{
+  font-size:20px;
+  cursor: pointer;
+  color:black;
+  outline: none;
+  border:none;
+  margin-top: -1px;
+  background: white;
+}
+.previous-arrow:disabled{
+  font-size:20px;
+  cursor: not-allowed;
+  color:gray;
+  outline: none;
+  border:none;
+  margin-top: -3px;
+  background: white;
+}
+
+.tool-tip-icon-st0{fill:none;}
+.tool-tip-icon-st1{fill:#339999;}
+
+.invest-list-container,.fund-list-table-wrapper .valuesign{
+      color: red;
+      font-size: 15px;
+      font-weight: 400;
+  }
+.invest-list-container,.fund-list-table-wrapper .underLimit{
+    color:green;
+    font-size: 15px;
+    font-weight: 400;
+    }

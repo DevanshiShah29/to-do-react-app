@@ -1,9 +1,12 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect , useMemo } from 'react';
 import axios from 'axios';
 import { Link } from 'react-router-dom';
 import TaskViewer from './TaskViewer';
 import TaskEditor from './TaskEditor';
 import Modal from 'react-modal';
+import ReactTable from 'react-table';
+import "react-table/react-table.css";  
+import Pagination from "../../Pagination";
 
 function List() {
     const [tasks, setTasks] = useState([]);
@@ -23,6 +26,48 @@ function List() {
         loadTasks();
     };
 
+    const columns = [
+        {
+            Header:'No.',
+            accessor:'id',
+            filterable: true,
+            sortable:true,
+        },
+        {
+            Header:'Task',
+            accessor:'title',
+            filterable: true,
+            sortable:true
+        },
+        {
+            Header:'Time',
+            accessor:'time',
+            className: "thead-dark",
+            headerClassName: "thead-dark",
+            filterable: true,
+            sortable:true
+        },
+        {
+            Header:'Actions',
+            accessor: "Action",
+            className: "td_action action-td",
+            filterable: false,
+            sortable:false,
+            headerClassName: "action-th",
+            Cell: ({ tasks }) => (
+                <>
+                <Link to={`tasks/view/`} className="btn btn-primary mr-2">View</Link>
+                <Link to={`tasks/edit/`} className="btn btn-outline-primary mr-2">Edit</Link>
+                <Link className="btn btn-danger mr-2" >Delete</Link>
+                </>
+            )
+            
+        }
+
+    ]
+
+    const apiData = tasks;
+    
     return (
         <div className="crud-section">
             {/*{
@@ -68,6 +113,13 @@ function List() {
                         }
                     </tbody>
                 </table>
+                
+                <ReactTable
+                    data={apiData}  
+                    columns={columns} 
+                    defaultPageSize={10} 
+                    PaginationComponent={Pagination}
+                />
             </div>
         </div>
     )
