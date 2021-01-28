@@ -53,8 +53,8 @@ class Log extends Component {
             <div className="log-wrapper">
                 <AddTask addTask={this.addTask}/>
                 <Tasks tasks={this.state.tasks}/>
-                <button onClick={this.isUnmount} disabled={!this.state.mount}><h3>Unmount</h3></button>
-                <button onClick={this.isMount} disabled={this.state.mount}><h3>Mount</h3></button> 
+                <button onClick={this.isUnmount} disabled={!this.state.mount}><h3>Hide</h3></button>
+                <button onClick={this.isMount} disabled={this.state.mount}><h3>View</h3></button> 
                 {this.state.mount ? <TimeTaken time={time} /> : null }
             </div>
           </>

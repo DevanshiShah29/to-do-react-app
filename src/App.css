@@ -88,6 +88,13 @@ a {
 
 .table tr td{
   text-align: center;
+  background:#fff;
+}
+
+.table thead tr th{
+  text-align: center;
+  background:#1c1c1c;
+  color:#ffffff;
 }
 
 
@@ -192,3 +199,100 @@ a {
 .redux .heading{
   padding:15px;
 }
+
+.crud-section .btn, .redux-crud .btn{
+  border:1px solid #1c1c1c;
+  color:white;
+  background: #333333 !important;
+}
+
+.crud-section .table tr td, .redux-crud .table tr td{
+  text-align:left;
+}
+
+.crud-section .button{
+  float:right;
+}
+
+.crud-section .header{
+  padding:10px 20px;
+}
+
+.crud-section .header h2, .crud-section .header .button{
+  width:auto;
+  display:inline-block;
+}
+
+.crud-section .table .thead-dark th, .redux-crud .table .thead-dark th{
+  width:25%;
+}
+
+.ReactModal__Overlay--after-open{
+  background: rgba(0, 0, 1, 0.8)!important;
+}
+
+.ReactModal__Content--after-open{
+  top:200px !important;
+  left:150px !important;
+  right:150px !important;
+  bottom:150px !important;
+}
+
+.redux-crud form{
+  width:40%;
+  margin:0 auto;
+  padding:30px;
+}
+
+.Table__pageButton:disabled,.disabled_arrow {
+    cursor: not-allowed;
+    color: gray;
+    font-size: 12px;
+}
+
+.Table__pageButton--active {
+  background: green;
+  color: white;
+}
+
+.Table__pageButton {
+  font-size: 12px;
+  outline: none;
+  border: none;
+  padding: 6px 9px;
+  cursor: pointer;
+  
+}
+  
+.previous-arrow{
+  font-size:20px;
+  cursor: pointer;
+  color:black;
+  outline: none;
+  border:none;
+  margin-top: -1px;
+  background: white;
+}
+.previous-arrow:disabled{
+  font-size:20px;
+  cursor: not-allowed;
+  color:gray;
+  outline: none;
+  border:none;
+  margin-top: -3px;
+  background: white;
+}
+
+.tool-tip-icon-st0{fill:none;}
+.tool-tip-icon-st1{fill:#339999;}
+
+.invest-list-container,.fund-list-table-wrapper .valuesign{
+      color: red;
+      font-size: 15px;
+      font-weight: 400;
+  }
+.invest-list-container,.fund-list-table-wrapper .underLimit{
+    color:green;
+    font-size: 15px;
+    font-weight: 400;
+    }

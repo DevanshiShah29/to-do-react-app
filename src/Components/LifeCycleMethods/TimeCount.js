@@ -14,13 +14,13 @@ class TimeCount extends Component {
 
         this.increment = () => {
             this.setState(
-                {time :this.state.time+60}
+                {time :this.state.time + 60}
             )
         }
   
         this.decrement = () => {
             this.setState(
-                {time :this.state.time-60}
+                {time :this.state.time - 60}
             )
         }
   
@@ -56,14 +56,14 @@ class TimeCount extends Component {
     
     shouldComponentUpdate(nextProps, nextState){
         if(nextProps.additionalTime && this.props.additionalTime 
-            !== nextProps.additionalTime){
-                console.log("Should Component Update - Do not render");
+            === nextProps.additionalTime){
+                console.log("Should Component Update - Do render");
                 console.log("---------------");
-                return false;
+                return true;
             }
-        console.log("Should Component Update - render");
+        console.log("Should Component Update - Do not render");
         console.log("---------------");
-        return true;
+        return false;
     }
 
     //This method allows us to capture some properties that are not stored in the state 
