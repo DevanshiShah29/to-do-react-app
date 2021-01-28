@@ -27,4 +27,6 @@ Simple working To-do application.<br />
 * In mouting tab, the order of execution for each life cycle method is logged.
 * In time tab, all life cycle methods are utilised all together to display the data.
 * In redux tab, state are being updated using redux-thunk and combined reducers.
+* CRUD tab uses db.json for operations while Redux CRUD uses local storage.
+* To work with db.json you might want to use command "npm run start:dev".
 

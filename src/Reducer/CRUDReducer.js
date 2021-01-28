@@ -1,4 +1,5 @@
 const CRUDReducer = (state = '', action) => {
+    console.log(list)
     var list = JSON.parse(localStorage.getItem('tasks'))
     switch (action.type) {
         case "INSERT":

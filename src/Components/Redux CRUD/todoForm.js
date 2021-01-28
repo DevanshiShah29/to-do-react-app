@@ -90,7 +90,7 @@ class todoForm extends Component {
 }
 
 const mapStateToProps = state => {
-    {console.log(state.list,"list")}
+    {console.log(state.list,"list",state, state.currentIndex)}
     return {
         list: state.list,
         currentIndex: state.currentIndex
